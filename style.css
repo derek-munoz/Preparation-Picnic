@@ -48,12 +48,19 @@ body {
     font-family: 'Euphoria Script', cursive;
 }
 
+h1 {
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Euphoria Script', cursive;
+}
+
 img {
     max-width: 150px;
     height: auto;
     align-items: center;
 }
-#map{
+
+#map {
     height: 400px;
     width: 100%;
 }
