@@ -9,20 +9,20 @@ body {
     background-color: #b8d8be;
 }
 
-header {
-    padding: 20px;
-}
-
-header>h1 {
-    color: whitesmoke;
+.heading {
     text-align: center;
-    font-size: 100px;
-    font-family: 'Euphoria Script', cursive;
+    display: block;
 }
 
-.logo{
+.heading>logo {
+    width: 100%;
+}
+.link {
+    text-align: center;
+}
 
-padding-left: 20px;
-
-
+img {
+    max-width: 10%;
+    height: auto;
+    align-items: center;
 }
