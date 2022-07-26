@@ -1,3 +1,26 @@
+A:link {
+    color: gray
+}
+
+A:link {
+    text-decoration: none;
+}
+
+A:visited,
+A:active {
+    color: green
+}
+
+A:visited,
+A:active {
+    text-decoration: none;
+}
+
+A:hover {
+    text-decoration: overline;
+    color: teal
+}
+
 * {
 
     margin: 0;
@@ -10,6 +33,7 @@ body {
 }
 
 .heading {
+    padding-top: 10px;
     text-align: center;
     display: block;
 }
@@ -17,16 +41,26 @@ body {
 .heading>logo {
     width: 100%;
 }
+
 .link {
+    font-size: 50px;
     text-align: center;
+    font-family: 'Euphoria Script', cursive;
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Euphoria Script', cursive;
 }
 
 img {
-    max-width: 10%;
+    max-width: 150px;
     height: auto;
     align-items: center;
 }
-#map{
+
+#map {
     height: 400px;
     width: 100%;
 }
