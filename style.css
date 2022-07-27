@@ -33,26 +33,25 @@ body {
 }
 
 .heading {
-    padding-top: 10px;
-    margin: 30px 20px;
+    display: -webkit-box;
+    display: flex;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    align-items: center;
+    background: white;
+    font-size: 50px;
     text-align: center;
-    /* display: block; */
+    font-family: 'Euphoria Script', cursive;
 }
 
 .logo {
-    width: 100%;
+    -webkit-box-ordinal-group: 2;
+            order: 1;
+    border-radius: 100%;
+    line-height: 32px;
+    padding: 10px;
 }
 
-.linkLeft {
-    font-size: 50px;
-    text-align: left;
-    font-family: 'Euphoria Script', cursive;
-}
-.linkRight {
-    font-size: 50px;
-    text-align: right;
-    font-family: 'Euphoria Script', cursive;
-}
 
 h1 {
     font-size: 50px;
