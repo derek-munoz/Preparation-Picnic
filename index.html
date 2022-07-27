@@ -14,7 +14,7 @@
 
     <div class="heading">
         <div class="logo">
-            <img src="images/logo.png" alt="logo">
+            <img src="images/logo.png" alt="logo" style="max-width: 150px">
         </div>
         <a href="products.html" class="item">Products</a>
         <a href="contact.html" class="item">Contact US</a>
@@ -26,6 +26,7 @@
     <BR>
 
     <div class="slideshow-container">
+
         <div class="mySlides fade">
             <img src="images/img1.jpg" style="width:100%">
             <div class="parkName">Freedom Park</div>
@@ -37,14 +38,21 @@
         </div>
 
         <div class="mySlides fade">
-            <img src="images/img3.png" style="width:100%">
-            <div class="parkName"> caption three</div>
+            <img src="images/img3.jpg" style="width:100%">
+            <div class="parkName"> Marshall Park</div>
         </div>
 
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
     </div>
-    <BR>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
 
 
     <script src="slideShow.js"></script>
