@@ -13,10 +13,16 @@ button.addEventListener('click', function(){
         var descValue = data['weather'][0]['description'];
 
         name.innerHTML = nameValue;
-        temp.innerHTML = tempValue;
+        temp.innerHTML = tempF(tempValue);
         desc.innerHTML = descValue;
 
     })
 
 .catch(err => alert("Wrong city name!"))
 })
+
+function tempF(kelvin) {
+    var num = ((kelvin-273.15)*1.8)+32;
+    num = num.toFixed(2);
+    return num;
+}
