@@ -316,3 +316,13 @@ input[type="submit"]{
 .future-forecast .weather-forecast{
     display: flex;
 }
+
+.weather-forecast{
+    display: -webkit-box;
+    display: flex;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    align-items: center;
+    font-size: 20px;
+    text-align: center;
+}
