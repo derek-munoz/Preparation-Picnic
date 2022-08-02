@@ -30,42 +30,52 @@ function tempF(kelvin) {
 const parks = [
     {
         name: "Freedom Park",
-        water: "yes"
+        water: "yes",
+        imgFile: "parks/freedom_park.jpg"
     },
     {
         name: "Romare Bearden Park",
-        water: "no"
+        water: "no",
+        imgFile: "parks/romare_bearden.jpg"
     },
     {
         name: "First Ward Park",
-        water: "no"
+        water: "no",
+        imgFile: "parks/first_ward.jpg"
     },
     {
         name:"McDowell Nature Center and Preserve",
-        water: "yes"
+        water: "yes",
+        imgFile: "parks/mcDowell.jpg"
     },
     {
         name:"Independence Park",
-        water: "no"
+        water: "no",
+        imgFile: "parks/independence.jpg"
     },
     {
-        name:"UNC Botanical Gardens",
-        water: "no"
+        name:"Midtown Park",
+        water: "no",
+        imgFile: "parks/midtown.jpg"
     },
     {
         name: "Anne Springs Close Greenway",
-        water: "yes"
+        water: "yes",
+        imgFile: "parks/anne_springs.jpg"
     },
     {
         name: "Latta Nature Preserve",
-        water: "yes"
+        water: "yes",
+        imgFile: "parks/latta_nature.jpg"
     },
     {
         name: "Latta Park",
-        water: "no"
+        water: "no",
+        imgFile: "parks/latta_park.jpg"
     },
     {
         name: "Reedy Creek Park",
-        water: "yes"
+        water: "yes",
+        imgFile: "parks/reedy.jpg"
     }
 ]
