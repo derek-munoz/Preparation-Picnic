@@ -28,7 +28,7 @@ setInterval(() => {
 getWeatherData()
 function getWeatherData () {
 
-        fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=$35.2271&lon=$80.8431&exclude=hourly,minutely&units=metric&appid=$e936469d950b5f2f6f5dc8a008f7af5b`).then(res => res.json()).then(data => {
+        fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=35.2271&lon=80.8431&exclude=hourly,minutely&units=emperial&appid=e936469d950b5f2f6f5dc8a008f7af5b`).then(res => res.json()).then(data => {
 
         console.log(data)
         showWeatherData(data);

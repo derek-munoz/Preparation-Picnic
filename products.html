@@ -17,6 +17,7 @@
             <img src="images/logo.png" alt="logo" style="max-width: 150px">
         </div>
         <a href="index.html" class="item">Home</a>
+        <a href="bundles.html" class="item">Bundles</a>
         <a href="contact.html" class="item">Contact US</a>
 
     </div>
@@ -36,8 +37,174 @@
         }
     </script>
     <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGoEVirZsw8wK3qM3cVgH9VVtTUqZo_Jk&callback=initMap&v=weekly">
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGoEVirZsw8wK3qM3cVgH9VVtTUqZo_Jk&callback=initMap&v=weekly"></script>
+
+     <div class="container">
+            <div class="current-info">
+                
+                <div class="datecontainer">
+                    <div class="time" id="time">
+                        12:30 <span#am-pm>PM</span>
+                    </div>
+                    <div class="date" id="date">
+                        Monday, 24 May
+                    </div>
+
+                    <div class="others" id="current-weather-items">
+                        <div class="weather-item">
+                            <div>Humidity</div>
+                            <div>95.2%</div>
+                        </div>
+                        <div class="weather-item">
+                            <div>Pressure</div>
+                            <div>121</div>
+                        </div>
+                        <div class="weather-item">
+                            <div>wind Speed</div>
+                            <div>222</div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="place-container">
+                    <div class="time-zone" id="time-zone">US/NC</div>
+                    <div id="location" class="location">IN</div>
+                </div>
+            </div>
+
+            
+        </div>
+
+        <div class="future-forcast">
+            <!-- <div class="today" id="current-temp">
+                <img src=" http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                <div class="other">
+                <div class="day">Monday</div>
+                <div class="temp">Night - 25.6&#176; F</div>
+                <div class="temp">Day - 25.6&#176; F</div>
+                </div>
+                
+            </div> -->
+
+            <div class="weather-forecast" id="weather-forecast">
+                <div class="weather-forecast-item">
+                    <div class="day">Mon</div>
+                    <img src=" http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                    <div class="temp">Night - 25.6&#176; F</div>
+                    <div class="temp">Day - 25.6&#176; F</div>
+                </div>
+                <div class="weather-forecast-item">
+                    <div class="day">Tue</div>
+                    <img src=" http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                    <div class="temp">Night - 25.6&#176; F</div>
+                    <div class="temp">Day - 25.6&#176; F</div>
+                </div>
+                <div class="weather-forecast-item">
+                    <div class="day">Wed</div>
+                    <img src=" http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                    <div class="temp">Night - 25.6&#176; F</div>
+                    <div class="temp">Day - 25.6&#176; F</div>
+                </div>
+                <div class="weather-forecast-item">
+                    <div class="day">Thur</div>
+                    <img src=" http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                    <div class="temp">Night - 25.6&#176; F</div>
+                    <div class="temp">Day - 25.6&#176; F</div>
+                </div>
+                <div class="weather-forecast-item">
+                    <div class="day">Fri</div>
+                    <img src=" http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                    <div class="temp">Night - 25.6&#176; F</div>
+                    <div class="temp">Day - 25.6&#176; F</div>
+                </div>
+                <div class="weather-forecast-item">
+                    <div class="day">Sat</div>
+                    <img src=" http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                    <div class="temp">Night - 25.6&#176; F</div>
+                    <div class="temp">Day - 25.6&#176; F</div>
+                </div>
+                <div class="weather-forecast-item">
+                    <div class="day">Sun</div>
+                    <img src=" http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                    <div class="temp">Night - 25.6&#176; F</div>
+                    <div class="temp">Day - 25.6&#176; F</div>
+                </div>
+
+            </div>  
+        </div>
+
+    <div class="display">
+        <h1 class="name"></h1>
+        <p class="desc"></p>
+        <p class="temp"></p>
+    </div>
+
     </script>
+    <BR>
+    <BR>
+
+    <div class = "bundles">
+        <img src = "parks/freedom_park.jpg" alt = "standard" style="width:100%">
+        <h1>Freedom Park</h1>
+        <p class="price">1908 East Blvd, Charlotte, NC 28203</p>
+        <p><button onclick="window.location.href='index.html'">Select</button></p>
+    </div>
+    <div class = "bundles">
+        <img src = "parks/romare_bearden.jpg" alt = "standard" style="width:100%">
+        <h1>Romare Bearden Park</h1>
+        <p class="price">300 S Church St, Charlotte, NC 28202</p>
+        <p><button>Select</button></p>
+    </div>
+    <div class = "bundles">
+        <img src = "parks/first_ward.jpg" alt = "standard" style="width:100%">
+        <h1>First Ward Park</h1>
+        <p class="price">301 E 7th St, Charlotte, NC 28202</p>
+        <p><button>Select</button></p>
+    </div>
+    <div class = "bundles">
+        <img src = "parks/mcDowell.jpg" alt = "standard" style="width:100%">
+        <h1>McDowell Nature Center and Preserve</h1>
+        <p class="price">15222 York Rd, Charlotte, NC 28278</p>
+        <p><button>Select</button></p>
+    </div>
+    <div class = "bundles">
+        <img src = "parks/independence.jpg" alt = "standard" style="width:100%">
+        <h1>Independence Park</h1>
+        <p class="price">300 Hawthorne Ln, Charlotte, NC 28204</p>
+        <p><button>Select</button></p>
+    </div>
+    <div class = "bundles">
+        <img src = "parks/midtown.jpg" alt = "standard" style="width:100%">
+        <h1>Midtown Park</h1>
+        <p class="price">510 S Kings Dr, Charlotte, NC 28204</p>
+        <p><button>Select</button></p>
+    </div>
+    <div class = "bundles">
+        <img src = "parks/anne_springs.jpg" alt = "standard" style="width:100%">
+        <h1>Anne Springs Close Greenway</h1>
+        <p class="price">104 Adventure Rd, Fort Mill, SC 29715</p>
+        <p><button>Select</button></p>
+    </div>
+    <div class = "bundles">
+        <img src = "parks/latta_nature.jpg" alt = "standard" style="width:100%">
+        <h1>Latta Nature Preserve</h1>
+        <p class="price">6345 Sample Rd, Huntersville, NC 28078</p>
+        <p><button>Select</button></p>
+    </div>
+    <div class = "bundles">
+        <img src = "parks/latta_park.jpg" alt = "standard" style="width:100%">
+        <h1>Latta Park</h1>
+        <p class="price">601 E Park Ave, Charlotte, NC 28203</p>
+        <p><button>Select</button></p>
+    </div>
+    <div class = "bundles">
+        <img src = "parks/reedy.jpg" alt = "standard" style="width:100%">
+        <h1>Reedy Creek Park</h1>
+        <p class="price"> 2900 Rocky River Rd, Charlotte, NC 28215</p>
+        <p><button>Select</button></p>
+    </div>
+
 
 <div class="container">
     <div class="current-info">
