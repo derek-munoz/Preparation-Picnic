@@ -26,3 +26,46 @@ function tempF(kelvin) {
     num = num.toFixed(2);
     return num;
 }
+
+const parks = [
+    {
+        name: "Freedom Park",
+        water: "yes"
+    },
+    {
+        name: "Romare Bearden Park",
+        water: "no"
+    },
+    {
+        name: "First Ward Park",
+        water: "no"
+    },
+    {
+        name:"McDowell Nature Center and Preserve",
+        water: "yes"
+    },
+    {
+        name:"Independence Park",
+        water: "no"
+    },
+    {
+        name:"UNC Botanical Gardens",
+        water: "no"
+    },
+    {
+        name: "Anne Springs Close Greenway",
+        water: "yes"
+    },
+    {
+        name: "Latta Nature Preserve",
+        water: "yes"
+    },
+    {
+        name: "Latta Park",
+        water: "no"
+    },
+    {
+        name: "Reedy Creek Park",
+        water: "yes"
+    }
+]
