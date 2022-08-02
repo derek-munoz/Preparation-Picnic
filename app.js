@@ -14,7 +14,7 @@ setInterval(() => {
     const month = time.getMonth();
     const date = time.getDate();
     const day = time.getDay();
-    const hour = time.getHour();
+    const hour = time.getHours();
     const hoursFormat = hour >= 13 ? hour %12: hour
     const minutes = time.getMinutes();
     const ampm = hour >=12 ? 'PM' : 'AM'
@@ -27,17 +27,14 @@ setInterval(() => {
 
 getWeatherData()
 function getWeatherData () {
-    navigator.geolocation.getCurrentPosition((success) => {
-        
-        let {latitude, longitude } = success.coords;
 
-        fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${35.2271}&lon=${80.8431}&exclude=hourly,minutely&units=metric&appid=${AIzaSyCGoEVirZsw8wK3qM3cVgH9VVtTUqZo_Jk}`).then(res => res.json()).then(data => {
+        fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=$35.2271&lon=$80.8431&exclude=hourly,minutely&units=metric&appid=$e936469d950b5f2f6f5dc8a008f7af5b`).then(res => res.json()).then(data => {
 
         console.log(data)
         showWeatherData(data);
         })
 
-    })
+    
 }
 
 function showWeatherData (data){
