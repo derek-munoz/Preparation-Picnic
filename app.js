@@ -157,5 +157,5 @@ function showWeatherData (data){
 function changeParkDisplay(value) {
     document.getElementById('pD').src = parks[value].imgFile;
     parkSelection = value;
-    console.log(parkSelection)
+    console.log(parkSelection);
 }
