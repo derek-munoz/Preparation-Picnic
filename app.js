@@ -1,10 +1,10 @@
-const timeE1 = document.getElementById('time');
-const dateE1 = document.getElementById('date');
-const currentWeatherItemsE1 = document.getElementById('current-weather-items');
+const timeEl = document.getElementById('time');
+const dateEl = document.getElementById('date');
+const currentWeatherItemsEl = document.getElementById('current-weather-items');
 const timezone = document.getElementById('time-zone');
-const locationE1 = document.getElementById('location');
-const weatherForecast = document.getElementById('weather-forecast');
-const currentTempE1 = document.getElementById('current-temp');
+const locationEl = document.getElementById('location');
+const weatherForecastEl = document.getElementById('weather-forecast');
+const currentTempEl = document.getElementById('current-temp');
 
 const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
 const months = ['Jan', 'Feb', 'March', 'April', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
@@ -19,16 +19,15 @@ setInterval(() => {
     const minutes = time.getMinutes();
     const ampm = hour >=12 ? 'PM' : 'AM'
 
-    timeE1.innerHTML = hoursFormat + ':' + minutes+ ' ' + `<span id="am-pm">${ampm}</span>`
+    timeEl.innerHTML = hoursFormat + ':' + minutes+ ' ' + `<span id="am-pm">${ampm}</span>`
 
-    dateE1.innerHTML = days[day] + ', ' +date+ ' ' + months[month]
+    dateEl.innerHTML = days[day] + ', ' +date+ ' ' + months[month]
 
 }, 1000)
 
 getWeatherData()
 function getWeatherData () {
-
-        fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=35.2271&lon=80.8431&exclude=hourly,minutely&units=emperial&appid=e936469d950b5f2f6f5dc8a008f7af5b`).then(res => res.json()).then(data => {
+        fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=35.227085&lon=-80.843124&exclude=hourly,minutely&units=Imperial&appid=e936469d950b5f2f6f5dc8a008f7af5b`).then(res => res.json()).then(data => {
 
         console.log(data)
         showWeatherData(data);
