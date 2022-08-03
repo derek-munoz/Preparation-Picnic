@@ -22,24 +22,92 @@
 
     </div>
 
-
-    <h1>Google Map</h1>
+    <!-- Google maps locations API -->
+    <h1>Picnic Map</h1>
     <div id="map"></div>
     <script>
+        // initializing map zoom of Charlette NC
         function initMap() {
-            var options = {
-                zoom: 8,
+            let options = {
+                zoom: 10,
                 center: { lat: 35.2271, lng: -80.8431 }
             }
 
-            var map = new
-                google.maps.Map(document.getElementById('map'), options);
+            let map = new google.maps.Map(document.getElementById('map'), options);
+
+            // creating markers for picnic locations
+            
+            let picnicOptions = {
+                position: new google.maps.LatLng(35.1942428, -80.8418727),
+                map: map
+            }
+        
+            let picnicOptions2 = {
+                position: new google.maps.LatLng(35.22697, -80.84732),
+                map: map
+            }
+
+            let picnicOptions3 = {
+                position: new google.maps.LatLng(35.227735, -80.837325),
+                map: map
+            }
+
+            let picnicOptions4 = {
+                position: new google.maps.LatLng(35.100134, -81.020447),
+                map: map
+            }
+
+            let picnicOptions5 = {
+                position: new google.maps.LatLng(35.2155955, -80.8239548),
+                map: map
+            }
+
+            let picnicOptions6 = {
+                position: new google.maps.LatLng(35.2105496, -80.8361735),
+                map: map
+            }
+
+            let picnicOptions7 = {
+                position: new google.maps.LatLng(35.0355902, -80.9139141),
+                map: map
+            }
+
+            let picnicOptions8 = {
+                position: new google.maps.LatLng(35.3581, -80.9072),
+                map: map
+            }
+
+            let picnicOptions9 = {
+                position: new google.maps.LatLng(35.2096, -80.8507),
+                map: map
+            }
+
+            let picnicOptions10 = {
+                position: new google.maps.LatLng(35.2752, -80.7161),
+                map: map
+            }
+
+
+            let marker = new google.maps.Marker(picnicOptions)
+            let marker2 = new google.maps.Marker(picnicOptions2)
+            let marker3 = new google.maps.Marker(picnicOptions3)
+            let marker4 = new google.maps.Marker(picnicOptions4)
+            let marker5 = new google.maps.Marker(picnicOptions5)
+            let marker6 = new google.maps.Marker(picnicOptions6)
+            let marker7 = new google.maps.Marker(picnicOptions7)
+            let marker8 = new google.maps.Marker(picnicOptions8)
+            let marker9 = new google.maps.Marker(picnicOptions9)
+            let marker10 = new google.maps.Marker(picnicOptions10)
         }
+
     </script>
     <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGoEVirZsw8wK3qM3cVgH9VVtTUqZo_Jk&callback=initMap&v=weekly"></script>
 
-     <div class="container">
+     
+        <!-- Weather API -->
+     
+        <div class="container">
             <div class="current-info">
                 
                 <div class="datecontainer">
@@ -75,7 +143,7 @@
 
             
         </div>
-
+        <!-- */ current weather class*/ -->
         <div class="future-forcast">
             <div class="today" id="current-temp">
                 <img src=" http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
