@@ -5,6 +5,7 @@ const timezone = document.getElementById('time-zone');
 const locationE1 = document.getElementById('location');
 const weatherForecast = document.getElementById('weather-forecast');
 const currentTempE1 = document.getElementById('current-temp');
+let parkSelection = 0;
 
 const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
 const months = ['Jan', 'Feb', 'March', 'April', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
@@ -150,4 +151,10 @@ function showWeatherData (data){
 
 
     weatherForecastEl.innerHTML = otherDayForcast;
+}
+
+function changeParkDisplay(value) {
+    document.getElementById('pD').src = parks[value].imgFile;
+    parkSelection = value;
+    console.log(parkSelection)
 }
