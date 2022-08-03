@@ -73,12 +73,6 @@ img {
     align-items: center;
 }
 
-#map {
-    height: 400px;
-    width: 100%;
-}
-
-
 /* slide show container */
 .slideshow-container {
     max-width: 1000px;
@@ -222,8 +216,14 @@ input[type="submit"]{
   opacity: 0.7;
 }
 
-/* weather App */
+/* Map location API */
 
+#map {
+    height: 400px;
+    width: 100%;
+}
+
+/* weather App */
 
 .container{
     padding: 20px 70px;
