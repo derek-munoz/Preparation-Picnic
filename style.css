@@ -340,6 +340,8 @@ input[type="submit"]{
     margin-right: auto;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
 .weather-forecast .weather-forecast-item .day{
     padding: 5px 15px;
     background: #3C3C44;
