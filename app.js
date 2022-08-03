@@ -2,12 +2,68 @@ const timeEl = document.getElementById('time');
 const dateEl = document.getElementById('date');
 const currentWeatherItemsEl = document.getElementById('current-weather-items');
 const timezone = document.getElementById('time-zone');
+const locationE1 = document.getElementById('location');
+const weatherForecast = document.getElementById('weather-forecast');
+const currentTempE1 = document.getElementById('current-temp');
+let parkSelection = 0;
 const locationEl = document.getElementById('location');
 const weatherForecastEl = document.getElementById('weather-forecast');
 const currentTempEl = document.getElementById('current-temp');
 
 const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
 const months = ['Jan', 'Feb', 'March', 'April', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+const parks = [
+    {
+        name: "Freedom Park",
+        water: "yes",
+        imgFile: "parks/freedom_park.jpg"
+    },
+    {
+        name: "Romare Bearden Park",
+        water: "no",
+        imgFile: "parks/romare_bearden.jpg"
+    },
+    {
+        name: "First Ward Park",
+        water: "no",
+        imgFile: "parks/first_ward.jpg"
+    },
+    {
+        name:"McDowell Nature Center and Preserve",
+        water: "yes",
+        imgFile: "parks/mcDowell.jpg"
+    },
+    {
+        name:"Independence Park",
+        water: "no",
+        imgFile: "parks/independence.jpg"
+    },
+    {
+        name:"Midtown Park",
+        water: "no",
+        imgFile: "parks/midtown.jpg"
+    },
+    {
+        name: "Anne Springs Close Greenway",
+        water: "yes",
+        imgFile: "parks/anne_springs.jpg"
+    },
+    {
+        name: "Latta Nature Preserve",
+        water: "yes",
+        imgFile: "parks/latta_nature.jpg"
+    },
+    {
+        name: "Latta Park",
+        water: "no",
+        imgFile: "parks/latta_park.jpg"
+    },
+    {
+        name: "Reedy Creek Park",
+        water: "yes",
+        imgFile: "parks/reedy.jpg"
+    }
+]
 // callback function
 setInterval(() => {
     const time = new Date();
@@ -96,4 +152,10 @@ function showWeatherData (data){
 
 
     weatherForecastEl.innerHTML = otherDayForcast;
+}
+
+function changeParkDisplay(value) {
+    document.getElementById('pD').src = parks[value].imgFile;
+    parkSelection = value;
+    console.log(parkSelection);
 }

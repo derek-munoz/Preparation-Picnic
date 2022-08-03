@@ -23,35 +23,63 @@
 
     </div>
 
-    <h1>Providing All Your Picnic Needs</h1>
     <BR>
     <BR>
 
-    <div class = "bundles">
-        <img src = "picnics/couple.jpg" alt = "standard" style="width:100%">
+    <form action="/action_page.php">
+        <label for="locations">Choose a Location:</label>
+        <select id="places" onchange="changeParkDisplay(value)">
+            <option value="0">Freedom Park</option>
+            <option value="1">Romare Bearden Park</option>
+            <option value="2">First Ward Park</option>
+            <option value="3">McDowell Nature Center and Preserve</option>
+            <option value="4">Independence Park</option>
+            <option value="5">Midtown Park</option>
+            <option value="6">Anne Springs Close Greenway</option>
+            <option value="7">Latta Nature Preserve</option>
+            <option value="8">Latta Park</option>
+            <option value="9">Reedy Creek Park</option>
+        </select>
+    </form>
+
+    <div class="parkDisplay">
+        <img src="parks/freedom_park.jpg" id="pD" style="width:100%">
+    </div>
+
+    <form>
+        <label>Choose Date of Picnic:
+          <input type="date" name="picnicDate" min="" max="" step="1">
+        </label>
+        <label>Choose a Time:
+            <input type="time" name="picnicTime" min="9:00" max="16:00">
+        </label>
+      </form>
+
+    <div class="bundles" id="couple">
+        <img src="picnics/couple.jpg" alt="standard" style="width:100%; display: none;">
         <h1>Couple Bundle</h1>
         <p class="price">Standard Price: $150</p>
-        <p>Information .......</p>
-        <p><button>Add to Cart</button></p>
+        <p>Blanket + Food Choice + Decoration</p>
+        <!-- <p><button>Add to Cart</button></p> -->
     </div>
 
-    <div class = "bundles">
-        <img src = "picnics/proposal.jpg" alt = "proposal" style="width:100%">
+    <div class="bundles" id="proposal">
+        <img src="picnics/proposal.jpg" alt="proposal" style="width:100%; display:none;">
         <h1>Proposal Bundle</h1>
         <p class="price">Standard Price: $200</p>
-        <p>Information .......</p>
-        <p><button>Add to Cart</button></p>
+        <p>Blanket + Food Choice + Decoration + Wine</p>
+        <!-- <p><button>Add to Cart</button></p> -->
     </div>
 
-    <div class = "bundles">
-        <img src = "picnics/group.jpg" alt = "group" style="width:100%">
+    <div class="bundles" id="group">
+        <img src="picnics/group.jpg" alt="group" style="width:100%; display: none;">
         <h1>Group Bundle</h1>
         <p class="price">Standard Price: $300</p>
-        <p>Information .......</p>
-        <p><button>Add to Cart</button></p>
+        <p>Blanket + 2 Food Choices + Decoration (+5 people)</p>
+        <!-- <p><button>Add to Cart</button></p> -->
     </div>
 
-
+    <script src="app.js"></script>
 </body>
 
 </html>

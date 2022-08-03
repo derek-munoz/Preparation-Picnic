@@ -334,6 +334,14 @@ input[type="submit"]{
     text-align: center;
 }
 
+.parkDisplay {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 .weather-forecast .weather-forecast-item .day{
     padding: 5px 15px;
     background: #3C3C44;
