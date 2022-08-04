@@ -159,3 +159,34 @@ function changeParkDisplay(value) {
     parkSelection = value;
     console.log(parkSelection);
 }
+
+function changeBundle(choice) {
+    document.getElementById('purchaseID').setAttribute("style","display:active");
+    if (choice === 1) {
+        document.getElementById('couplePic').setAttribute("style","display:active; width:100%");
+        document.getElementById('proposalPic').setAttribute("style","display:none; width:100%");
+        document.getElementById('groupPic').setAttribute("style","display:none; width:100%");
+        document.getElementById('foodChoice2').setAttribute("style","display:none");
+        document.getElementById('wineChoices').setAttribute("style","display:none");
+    }
+    else if (choice === 2) {
+        document.getElementById('proposalPic').setAttribute("style","display:active; width:100%");
+        document.getElementById('couplePic').setAttribute("style","display:none; width:100%");
+        document.getElementById('groupPic').setAttribute("style","display:none; width:100%");
+        document.getElementById('wineChoices').setAttribute("style","display:active");
+        document.getElementById('foodChoice2').setAttribute("style","display:none");
+    }
+    else {
+        document.getElementById('groupPic').setAttribute("style","display:active; width:100%");
+        document.getElementById('couplePic').setAttribute("style","display:none; width:100%");
+        document.getElementById('proposalPic').setAttribute("style","display:none; width:100%");
+        document.getElementById('wineChoices').setAttribute("style","display:none");
+        document.getElementById('foodChoice2').setAttribute("style","display:active");
+
+    }
+    
+}
+
+function priceCalc (date) {
+    console.log(date);
+}
