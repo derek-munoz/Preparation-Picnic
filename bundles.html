@@ -46,37 +46,129 @@
         <img src="parks/freedom_park.jpg" id="pD" style="width:100%">
     </div>
 
-    <form>
-        <label>Choose Date of Picnic:
-          <input type="date" name="picnicDate" min="" max="" step="1">
-        </label>
-        <label>Choose a Time:
-            <input type="time" name="picnicTime" min="9:00" max="16:00">
-        </label>
-      </form>
 
     <div class="bundles" id="couple">
-        <img src="picnics/couple.jpg" alt="standard" style="width:100%; display: none;">
+        <img src="picnics/couple.jpg" id="couplePic" style="width:100%; display: none;">
         <h1>Couple Bundle</h1>
         <p class="price">Standard Price: $150</p>
         <p>Blanket + Food Choice + Decoration</p>
-        <!-- <p><button>Add to Cart</button></p> -->
+        <p><button onclick="changeBundle(1)">Purchase</button></p>
     </div>
 
     <div class="bundles" id="proposal">
-        <img src="picnics/proposal.jpg" alt="proposal" style="width:100%; display:none;">
+        <img src="picnics/proposal.jpg" id="proposalPic" style="width:100%; display:none;">
         <h1>Proposal Bundle</h1>
         <p class="price">Standard Price: $200</p>
         <p>Blanket + Food Choice + Decoration + Wine</p>
-        <!-- <p><button>Add to Cart</button></p> -->
+        <p><button onclick="changeBundle(2)">Purchase</button></p>
     </div>
 
     <div class="bundles" id="group">
-        <img src="picnics/group.jpg" alt="group" style="width:100%; display: none;">
+        <img src="picnics/group.jpg" id="groupPic" style="width:100%; display: none;">
         <h1>Group Bundle</h1>
         <p class="price">Standard Price: $300</p>
         <p>Blanket + 2 Food Choices + Decoration (+5 people)</p>
-        <!-- <p><button>Add to Cart</button></p> -->
+        <p><button onclick="changeBundle(3)">Purchase</button></p>
+    </div>
+
+    <div class="container-review" id="purchaseID" style="display: none;">
+        <form action="action_page.php">
+            <div class="row">
+                <div class="col-25">
+                    <label for="fname">Date:</label>
+                </div>
+                <div class="col-75">
+                    <input type="date" id="calanderDate" value="calanderDate" onchange="getdate(this.value)">
+                </div>
+            </div>
+            <div class="row" id="blanket">
+                <div class="col-25">
+                    <label for="country">Blanket Color:</label>
+                </div>
+                <div class="col-75">
+                    <select id="color">
+                        <option value="r">red</option>
+                        <option value="g">green</option>
+                        <option value="b">blue</option>
+                        <option value="y">yellow</option>
+                        <option value="p">pink</option>
+                        <option value="w">white</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="foodChoice">Food Choice:</label>
+                </div>
+                <div class="col-75">
+                    <select id="foodChoice">
+                        <option value="sandwhiches">Sandwhiches</option>
+                        <option value="pasta">Pasta</option>
+                        <option value="wraps">Wraps</option>
+                        <option value="salad">Salad</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row" id="foodChoice2">
+                <div class="col-25">
+                    <label for="foodChoice2">Food Choice 2:</label>
+                </div>
+                <div class="col-75">
+                    <select id="foodChoice2">
+                        <option value="null"></option>
+                        <option value="sandwhiches">Sandwhiches</option>
+                        <option value="pasta">Pasta</option>
+                        <option value="wraps">Wraps</option>
+                        <option value="salad">Salad</option>
+                        <option value="charcuterie">Charcuterie Board</option>
+                        <option value="fruit">Fruit</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row" id="wineChoices">
+                <div class="col-25">
+                    <label for="wineChoice">Wine:</label>
+                </div>
+                <div class="col-75">
+                    <select id="wineChoice">
+                        <option value="null"></option>
+                        <option value="whiteWine">White Wine</option>
+                        <option value="roseWine">Rose Wine</option>
+                        <option value="redWine">Red Wine</option>
+                        <option value="sparklingWine">Sparkling Wine</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="decorationChoice">Floral Decoration:</label>
+                </div>
+                <div class="col-75">
+                    <select id="decorationC">
+                        <option value="sunflower">Sunflower</option>
+                        <option value="rose">Rose</option>
+                        <option value="tulip">Tulip</option>
+                        <option value="blend">Blend</option>
+                    </select>
+                </div>
+            </div>
+
+            <BR>
+                <p class="price" id="adjustments">Choosen date is hot: 25% discount</p>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="priceFinal">Final Price: </label>
+                </div>
+                <div class="col-75">
+                    <p class="price" id="finalPrice">$200</p>
+                </div>
+            </div>
+
+                    <div class="row">
+                        <input type="submit" value="Submit">
+                    </div>
+        </form>
     </div>
 
     <script src="app.js"></script>
